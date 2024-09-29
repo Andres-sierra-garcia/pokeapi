@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    background-image: url('./assets/fondo_app.png');
+    background-image: url("./assets/fondo_app.png");
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -34,23 +34,68 @@ body {
     /* Transición en hover */
 }
 
+/* From Uiverse.io by gharsh11032000 */
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 15px;
+    height: 42px;
+    margin-left: 20%;
+    align-self: center;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+    scale: 1;
+}
+
 .container:hover {
-    background-image: url('./assets/fondo_app_2.png');
+    background-image: url("./assets/fondo_app_2.png");
 }
 
 @keyframes fadeIn {
     from {
-        background-image: url('./assets/fondo_app.png');
+        background-image: url("./assets/fondo_app.png");
         opacity: 0;
     }
 
     to {
-        background-image: url('./assets/fondo_app.png');
+        background-image: url("./assets/fondo_app.png");
         opacity: 1;
     }
 }
-
-
 
 .video-fondo {
     position: absolute;
@@ -350,12 +395,12 @@ main {
     margin: 0%;
 }
 
-.backgroundImage{
-    display:flex ;
+.backgroundImage {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 258px;
-    border-radius: 2px; ;
+    border-radius: 2px;
 }
 
 #weakness {
@@ -541,7 +586,6 @@ main {
     }
 }
 
-
 #bar {
     width: 90%;
     background-color: #dc2f02;
@@ -556,8 +600,7 @@ main {
     /* sombra oscura */
 }
 
-
-@media (max-width:1140px) {
+@media (max-width: 1140px) {
     main {
         flex-wrap: wrap;
         padding: 2%;
@@ -573,7 +616,6 @@ main {
 
     header {
         flex-direction: column;
-
     }
 
     .head {
@@ -581,19 +623,15 @@ main {
     }
 }
 
-
-@media (max-width:360px){
-    .pokemonImage{
+@media (max-width: 360px) {
+    .pokemonImage {
         background-position: center;
         background-repeat: no-repeat;
         min-width: 320px;
-        box-sizing: border-box  ;
-        
+        box-sizing: border-box;
     }
 
-
-
-    #imageLogo{
+    #imageLogo {
         border-radius: 50px;
         border: 3px solid #212529;
         height: 48px;

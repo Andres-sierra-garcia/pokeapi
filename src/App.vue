@@ -27,6 +27,10 @@
           </div>
         </div>
       </div>
+<button onclick="location.href='https://batalla-pokemones.vercel.app/'" class="button">
+  Modo Batalla
+</button>
+
     </header>
 
     <main>
