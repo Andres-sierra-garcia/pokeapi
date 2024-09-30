@@ -1,9 +1,9 @@
 body {
     margin: 0%;
     background-color: #212529;
-    height: 100%;
+    height: 100vh;
     padding: 0%;
-    display: flex;
+    display: contents;
     align-items: center;
     justify-content: center;
 }
@@ -24,7 +24,7 @@ body {
     background-image: url("./assets/fondo_app.png");
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     position: relative;
@@ -600,18 +600,28 @@ main {
     /* sombra oscura */
 }
 
+@media (max-width: 1240px) and (min-width: 1140px) {
+    body {
+        display: contents;
+        height: 100vh;
+    }
+}
+
+
+
 @media (max-width: 1140px) {
     main {
         flex-wrap: wrap;
         padding: 2%;
     }
 
+
     body {
         height: 100%;
     }
 
-    .container {
-        height: fit-content;
+    .button{
+        margin-left: 0%;
     }
 
     header {
