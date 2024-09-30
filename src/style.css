@@ -3,7 +3,7 @@ body {
     background-color: #212529;
     height: 100vh;
     padding: 0%;
-    display: contents;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -29,9 +29,8 @@ body {
     padding: 0;
     position: relative;
     animation: fadeIn 1s ease-in-out;
-    /* Animación al cargar */
+    overflow-y: auto;
     transition: background-image 0.5s ease-in-out;
-    /* Transición en hover */
 }
 
 /* From Uiverse.io by gharsh11032000 */
@@ -600,12 +599,6 @@ main {
     /* sombra oscura */
 }
 
-@media (max-width: 1240px) and (min-width: 1140px) {
-    body {
-        display: contents;
-        height: 100vh;
-    }
-}
 
 
 
